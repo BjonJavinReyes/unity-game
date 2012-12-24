@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class FlameThrower_AI : Weapon {
+public class FlameThrower_AI : MonoBehaviour, Weapon {
 	private Transform target;
 	
 	// Use this for initialization
@@ -14,7 +14,7 @@ public class FlameThrower_AI : Weapon {
 	
 	}
 	
-	override public void setTarget(Transform target){
+	public void setTarget(Transform target){
 		this.target=target;
 	}
 }

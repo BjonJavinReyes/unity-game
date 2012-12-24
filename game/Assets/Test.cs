@@ -6,7 +6,7 @@ public class Test : MonoBehaviour {
 	private Weapon w=null;
 	// Use this for initialization
 	void Start () {
-		w=GetComponent<Weapon>();
+		w=(Weapon)GetComponent(typeof(Weapon));
 		Debug.Log(w);
 	}
 	
